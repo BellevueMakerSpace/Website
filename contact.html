@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <link rel="stylesheet" href="master.css" type="text/css">
+
+</head>
+<body>
+  <header class="header-home">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">BELLEVUEMAKERSPACE</a>
+        </div>
+        <!-- Menue Items -->
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li> <!-- active highlights page/tabe your are on -->
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+
+      </div>
+
+      <div class="soc-icons">
+            		
+            		<a href="https://twitter.com/@BellMakerSpace" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+
+            		<a href="https://www.facebook.com/bellevuemakerspace/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="header-content">
+      <h1 class="call-to-action"></h1>
+
+    </div>
+  </header>
+  <body>
+	  <div class="rectangle-color">
+	    <h1>Contact and Location</h1>
+	    <hr class="line">
+	    <p>
+         Have a question? Concern? Inquiry? Email us at info[at]bellevuemaker.space
+      </p>
+
+      <p>
+        The Bellevue MakerSpace is gracitiously housed in St. Peters united Methodist Church.
+        <a href="http://stpetersumc.info/" target="_blank">
+          http://stpetersumc.info/
+        </a>
+      </p>
+
+      <p>
+        Street Address:
+        <a href="https://www.google.com/maps/place/St+Peters+United+Methodist+Church/@47.6173883,-122.1126697,17z/data=!3m1!4b1!4m5!3m4!1s0x54906dc008204859:0xbfdc39863702bbad!8m2!3d47.6173847!4d-122.110481" target="_blank">
+        17222 NE 8th St, Bellevue, WA 98008
+        </a>
+      </p>
+	    </div>
+    </body>
+
+    <footer class="container-fluid">
+      <div id="map" style="width:100%;height:500px;"></div>
+
+        <script>
+        function myMap() {
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {
+            center: new google.maps.LatLng(47.617125, -122.110470),
+            zoom: 17,
+            styles: [
+            {
+              featureType: 'all',
+              stylers: [
+                { saturation: -80 }
+              ]
+            },{
+              featureType: 'road.arterial',
+              elementType: 'geometry',
+              stylers: [
+                { hue: '#5ba9d4' },
+                { saturation: 50 }
+              ]
+            },{
+              featureType: 'poi.business',
+              elementType: 'labels',
+              stylers: [
+                { visibility: 'off' }
+              ]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [
+                { hue: '#46bcec' }
+              ]
+            }
+          ]
+
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    </footer>
+</body>
+
+</html>

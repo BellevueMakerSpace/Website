@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <link rel="stylesheet" href="master.css" type="text/css">
+
+</head>
+<body>
+  <header class="header-home">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">BELLEVUEMAKERSPACE</a>
+        </div>
+        <!-- Menue Items -->
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li> <!-- active highlights page/tabe your are on -->
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+      </div>
+
+      <div class="soc-icons">
+            		
+            		<a href="https://twitter.com/@BellMakerSpace" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+
+            		<a href="https://www.facebook.com/bellevuemakerspace/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="header-content">
+      <h1 class="call-to-action"></h1>
+
+    </div>
+  </header>
+  <body>
+	  <div class="rectangle-color">
+	    <h1>Who We Are</h1>
+	    <hr class="line">
+	    <p>
+	      We are a group of passionate individuals who come together and work on unique projects. Our goal is to provide a place where people can work on variying degree of projects from code to wood working. We aim to create a place were the only limitation is your creativity and wits. Come join us and start creating today!
+
+	    </p>
+
+	  </div>
+
+	  <div>
+	    <h1>Our Team</h1>
+	  </div>
+
+	  <hr class="line">
+
+
+	    <div class="container peeps">
+
+
+	      <div class="row">
+	        <div class="col-md-3" style="background-color: white">
+		        <img class="img-circle center-block rotate" src="images/Keat.jpg" alt="..." width="140" height="140"></img>
+		        <h2>Keat Chan</h2>
+		        <h4>Keat is the advisor for the MakerSpace and a true hacker at heart!</h4>
+	      	</div>
+	        
+
+	        <div class="col-md-3" style="background-color: white">
+	          <img class="img-circle center-block" src="images/Soup.jpg" alt="..." width="140" height="140"></img>
+	          <h2>Zach R</h2>
+	          <h4>Zach Co-Founded the Bellevue MakerSpace. Along with the MakerSpace, he enjoys sharing his passion for technology with others, and has a particular interest in Cyber Security and Digital Rights.</h4>
+
+
+
+	        </div>
+
+	        <div class="col-md-3" style="background-color: white">
+	          <img class="img-circle center-block" src="images/Avi.jpg" alt="..." width="140" height="140"></img>
+	          <h2>Avi Glozman</h2>
+	          <h4>Avi is on the Bellevue MakerSpace board and is an active developer. When he is not at hackathons you can find him coding at home.</h4>
+
+
+	        </div>
+
+	        <div class="col-md-3" style="background-color: white">
+	          <img class="img-circle center-block" src="images/unsplash-code.jpg" alt="..." width="140" height="140"></img>
+	          <h2>JL Chan</h2>
+	          <h4>
+	          	Jai Ling Co-Founded the MakerSpace.
+	          </h4>
+
+	        </div>
+
+	      </div>
+	    </div>
+    </body>
+
+    <footer class="container-fluid">
+      <div id="map" style="width:100%;height:500px;"></div>
+
+        <script>
+        function myMap() {
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {
+            center: new google.maps.LatLng(47.617125, -122.110470),
+            zoom: 17,
+            styles: [
+            {
+              featureType: 'all',
+              stylers: [
+                { saturation: -80 }
+              ]
+            },{
+              featureType: 'road.arterial',
+              elementType: 'geometry',
+              stylers: [
+                { hue: '#5ba9d4' },
+                { saturation: 50 }
+              ]
+            },{
+              featureType: 'poi.business',
+              elementType: 'labels',
+              stylers: [
+                { visibility: 'off' }
+              ]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [
+                { hue: '#46bcec' }
+              ]
+            }
+          ]
+
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    </footer>
+</body>
+
+</html>

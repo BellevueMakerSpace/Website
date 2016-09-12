@@ -1,0 +1,96 @@
+header {
+  background: url(images/leather-working.jpg) no-repeat center fixed;
+  height: 70vh;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.header-events {
+  background: url(images/unsplash-code.jpg) no-repeat center fixed;
+  height: 70vh;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.header-content {
+  text-align: center;
+}
+
+.soc-icons {
+	text-align: right;
+}
+.rectangle-color {
+  
+  height: 40vh;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.navbar {
+	background: rgba(255, 255, 255, 0.94);
+	
+}
+
+.line {
+	margin: 27px 696px;
+}
+
+.peeps {
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+.rotate {
+	 -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.sched-events {
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.title {
+	text-align: left;
+}
+
+.line-bigger {
+	margin: 27px 2px;
+	border: 1px;
+	border-top: 1px solid #5ba9d4;
+
+}
+
+hr {
+	border: 1px;
+	border-top: 1px solid #5ba9d4;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
